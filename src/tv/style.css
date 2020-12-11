@@ -1,0 +1,160 @@
+
+body {
+    margin: 0;
+    font-family: 'Francois One', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+* {
+    cursor: none;
+}
+
+#background {
+    position: fixed;
+    z-index: -1;
+    top: -50%;
+    background-image: url(img/bg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vw;
+    animation: spin 120s infinite linear;
+}
+
+@keyframes spin {
+    0%   {transform: rotate(0) scale(1.5);}
+    100% {transform: rotate(360deg) scale(1.5);}
+}
+
+#start {
+    position: fixed;
+    z-index: 999;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+#start span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+}
+
+#waiting, #points, #round, #question, #answer, #winner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    text-align: center;
+    transition: transform 1s, opacity 1s;
+}
+
+#points, #round, #winner {
+    transition: transform .5s, opacity .5s;
+}
+
+#points table {
+    border-spacing: 100px 0;
+}
+
+#points td {
+    font-size: 50px;
+    text-shadow: 5px 5px 0 #000;
+    white-space: nowrap;
+}
+
+#points tr:last-child td {
+    font-size: 100px;
+    color: gold;
+    font-family: 'Henny Penny', cursive;
+}
+
+#round span, #winner span {
+    text-shadow: 5px 5px 0 #000;
+}
+
+#round span:first-child, #winner span:first-child {
+    font-size: 100px;
+    color: gold;
+    font-family: 'Henny Penny', cursive;
+}
+
+#round span:last-child, #winner span:last-child {
+    font-size: 50px;
+}
+
+#waiting.off, #points.off, #round.off, #question.off, #answer.off, #doubt.off, #winner.off {
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 0;
+}
+
+#options span {
+    font-size: 30px;
+    text-shadow: 5px 5px 0 #000;
+    background-color: #470a73;
+    padding: 5px 25px;
+    margin: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+#player {
+    color: gold;
+    font-size: 30px;
+    text-shadow: 5px 5px 0 #000;
+}
+
+#question {
+    width: 90%;
+}
+
+#questionText, #answer {
+    font-size: 50px;
+    text-shadow: 5px 5px 0 #000;
+}
+
+#logo {
+    font-family: 'Henny Penny', cursive;
+    font-size: 100px;
+    text-shadow: 5px 5px 0 #000;
+}
+
+#logo span {
+    display: inline-block;
+}
+
+#logo span:nth-child(1) {animation: bobbing 1s infinite alternate}
+#logo span:nth-child(2) {animation: bobbing 1s infinite alternate .1s}
+#logo span:nth-child(3) {animation: bobbing 1s infinite alternate .2s}
+#logo span:nth-child(4) {animation: bobbing 1s infinite alternate .3s}
+#logo span:nth-child(5) {animation: bobbing 1s infinite alternate .4s}
+#logo span:nth-child(6) {animation: bobbing 1s infinite alternate .5s}
+#logo span:nth-child(7) {animation: bobbing 1s infinite alternate .6s}
+#logo span:nth-child(8) {animation: bobbing 1s infinite alternate .7s}
+#logo span:nth-child(9) {animation: bobbing 1s infinite alternate .8s}
+
+@keyframes bobbing {
+    0% {transform: translateY(0) scale(1) rotate(0);}
+    100% {transform: translateY(-25px) scale(1.1);}
+}
+
+#players {
+    font-size: 50px;
+    text-shadow: 5px 5px 0 #000;
+}
+
+#doubt {
+    background-color: #c70a1b;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    font-size: 25px;
+    padding: 15px 100px;
+    border-radius: 5000px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.5);
+    transition: transform 1s, opacity 1s;
+}

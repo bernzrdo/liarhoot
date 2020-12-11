@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Liarhoot!</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Francois+One&family=Henny+Penny&display=swap">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="background"></div>
+        <div id="start"><span>Click here to start!</span></div>
+        <div id="waiting">
+            <span id="logo"><span>L</span><span>i</span><span>a</span><span>r</span><span>h</span><span>o</span><span>o</span><span>t</span><span>!</span></span><br>
+            <span id="players"></span>
+        </div>
+        <div id="points" class="off"></div>
+        <div id="round" class="off">
+            <span id="roundNumber"></span><br>
+            <span id="roundPlayer"></span>
+        </div>
+        <div id="question" class="off">
+            <span id="player"></span><br>
+            <span id="questionText"></span><br>
+            <span id="options"></span>
+        </div>
+        <div id="doubt" class="off"></div>
+        <div id="answer" class="off"></div>
+        <div id="winner" class="off">
+            <span></span><br>
+            <span>Winner!</span>
+        </div>
+    </body>
+</html>

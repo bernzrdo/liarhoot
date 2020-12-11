@@ -1,0 +1,48 @@
+
+body {
+    margin: 0;
+    font-family: 'Francois One', sans-serif;
+    color: #fff;
+    background-color: #e0bef9;
+    text-align: center;
+}
+
+input {
+    margin: 25px;
+    font-family: 'Francois One', sans-serif;
+    width: calc(100% - 80px);
+    font-size: 2em;
+    padding: 10px 15px;
+    border: 0;
+}
+
+button {
+    margin: 25px;
+    background-color: #470a73;
+    color: #fff;
+    border-radius: 15px;
+    font-family: 'Francois One', sans-serif;
+    width: calc(100% - 50px);
+    font-size: 2em;
+    padding: 10px 15px;
+    border: 0;
+}
+
+#header {
+    font-family: 'Henny Penny', cursive;
+    font-size: 2em;
+    text-align: center;
+    padding: 15px 0;
+    text-shadow: 5px 5px 0 #000;
+    background-color: #470a73;
+}
+
+#answered, #answer, #doubt, #right, #wrong {
+    display: none;
+}
+
+#answer {
+    margin: 25px;
+    color: #000;
+    font-size: 2em;
+}

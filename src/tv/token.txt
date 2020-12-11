@@ -1,0 +1,2 @@
+4655fbe7cdb8c18eb1cedca51a66637687ef543b7c83324654b4bf66a14489e1
+https://opentdb.com/api_token.php?command=request
